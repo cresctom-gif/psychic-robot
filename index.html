@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>進次郎構文アプリ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="phrase-card" aria-labelledby="app-title">
+        <p class="eyebrow">押すたびに、それっぽい一言</p>
+        <h1 id="app-title">進次郎構文アプリ</h1>
+
+        <div class="phrase-box" aria-live="polite">
+          <p id="phrase" class="phrase">
+            ボタンを押すということは、ボタンが押されるということです。
+          </p>
+          <p class="note">進次郎構文風のオリジナル文です</p>
+        </div>
+
+        <button id="drawButton" class="draw-button" type="button">
+          一言を出す
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
