@@ -9,8 +9,8 @@ body {
     "Yu Gothic", sans-serif;
   color: #172033;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)),
-    linear-gradient(145deg, #e8f3ff 0%, #f5f0e8 48%, #e6f4df 100%);
+    linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.74)),
+    linear-gradient(145deg, #e3f4f2 0%, #f8efd8 48%, #edf1fb 100%);
 }
 
 .app {
@@ -21,7 +21,7 @@ body {
 }
 
 .phrase-card {
-  width: min(100%, 420px);
+  width: min(100%, 440px);
   padding: 28px 22px 24px;
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
@@ -35,32 +35,33 @@ body {
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0;
-  color: #2c6f63;
+  color: #7a4c14;
 }
 
 h1 {
   margin: 0 0 22px;
-  font-size: 2rem;
+  font-size: 1.95rem;
   line-height: 1.1;
 }
 
 .phrase-box {
   display: grid;
   align-content: center;
-  min-height: 230px;
+  min-height: 260px;
   padding: 26px 20px;
   margin-bottom: 22px;
   border-radius: 8px;
-  background: #f9fbff;
-  border: 2px solid #316c9b;
+  background: #fffdf7;
+  border: 2px solid #2f7d6f;
 }
 
 .phrase {
   margin: 0;
-  font-size: clamp(1.45rem, 7vw, 2rem);
+  font-size: clamp(1.25rem, 6.2vw, 1.72rem);
   font-weight: 800;
-  line-height: 1.45;
-  color: #213d60;
+  line-height: 1.55;
+  color: #173f4f;
+  overflow-wrap: anywhere;
 }
 
 .note {
@@ -76,11 +77,11 @@ h1 {
   border: 0;
   border-radius: 8px;
   color: #ffffff;
-  background: #236a78;
+  background: #1f6f63;
   font-size: 1.08rem;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 8px 0 #164852;
+  box-shadow: 0 8px 0 #124b43;
   transition:
     transform 120ms ease,
     box-shadow 120ms ease,
@@ -89,11 +90,11 @@ h1 {
 
 .draw-button:active {
   transform: translateY(5px);
-  box-shadow: 0 3px 0 #164852;
+  box-shadow: 0 3px 0 #124b43;
 }
 
 .draw-button:focus-visible {
-  outline: 4px solid rgba(35, 106, 120, 0.24);
+  outline: 4px solid rgba(31, 111, 99, 0.24);
   outline-offset: 4px;
 }
 
