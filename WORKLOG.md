@@ -1,36 +1,33 @@
 # Worklog
 
-## 2026-05-30
+## 2026-06-02
 
-今日やったことの記録です。
+GitHubで人に見せやすい状態に整えました。
 
-### 作ったもの
+### 整えたもの
 
-- 1画面で動く「スンズロー構文アプリ」を作成
-- ボタンを押すと、100種類のメッセージからランダムに1つ表示
-- スマホでも見やすいデザインに調整
+- アプリ名を「ばんどう農園 Instagram記事メーカー」に統一
+- READMEを初心者向けに書き直し
+- 使い方、できること、ファイルの意味を説明
+- GitHubで見た時に分かりやすいようにスクリーンショットを追加
+- HTMLに説明文のメタ情報を追加
+
+### アプリでできること
+
+- 季節に合わせたInstagram投稿文を作成
+- 山菜、ピーマン、トマト、スイカ、なす、いちご、ジャムなどを選択
+- 北海道・新ひだか町三石の雰囲気を入れた文章を生成
+- 馬糞堆肥を使った土づくりの特色を文章に反映
+- 文章をコピーしてInstagramに貼り付け
 
 ### GitHub
 
-- リポジトリを公開状態で運用
-- URL: https://github.com/cresctom-gif/psychic-robot
-- 最新コミット: `cd553f1 Update to Sunzuro phrase app`
+- リポジトリ: https://github.com/cresctom-gif/psychic-robot
+- 公開ページ: https://psychic-robot-sepia.vercel.app
+- リポジトリ説明文を追加
 
-### Vercel
+### 次にできること
 
-- GitHubリポジトリとVercelを連携
-- GitHubにpushすると、Vercelが自動で公開ページを更新する状態に設定
-- 公開URL: https://psychic-robot-sepia.vercel.app
-
-### 確認したこと
-
-- GitHubの `main` ブランチが最新になっている
-- Vercelの公開ページで「スンズロー構文アプリ」が表示される
-- 「一言を出す」ボタンを押すとランダムな文が表示される
-
-### 次からの流れ
-
-1. このフォルダでアプリを直す
-2. Gitでコミットする
-3. GitHubへpushする
-4. Vercelが自動で公開ページを更新する
+1. GitHubリポジトリ名を分かりやすい名前に変更する
+2. VercelやGitHub Pagesで、URLから触れる形に公開する
+3. 投稿文の言い回しを増やす
