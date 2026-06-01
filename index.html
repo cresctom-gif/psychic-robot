@@ -3,25 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>スンズロー構文アプリ</title>
+    <title>ばんどう農園 Instagram記事メーカー</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="app">
-      <section class="phrase-card" aria-labelledby="app-title">
-        <p class="eyebrow">押すたびに、深そうで深い一言</p>
-        <h1 id="app-title">スンズロー構文アプリ</h1>
-
-        <div class="phrase-box" aria-live="polite">
-          <p id="phrase" class="phrase">
-            ボタンを押すということは、ボタンが押されるということです。
-          </p>
-          <p class="note">スンズロー構文風のオリジナル文です</p>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <div class="hero__sky" aria-hidden="true">
+          <span class="hero__sun"></span>
+          <span class="hero__field hero__field--back"></span>
+          <span class="hero__field hero__field--front"></span>
         </div>
 
-        <button id="drawButton" class="draw-button" type="button">
-          一言を出す
-        </button>
+        <div class="hero__content">
+          <p class="eyebrow">北海道・新ひだか町三石</p>
+          <h1 id="app-title">ばんどう農園 Instagram記事メーカー</h1>
+          <p class="lead">
+            季節と作物を選ぶだけで、あと一言足せば投稿できる文章を作ります。
+          </p>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="記事作成フォーム">
+        <form class="controls" id="postForm">
+          <label class="field">
+            <span>季節</span>
+            <select id="season" name="season">
+              <option value="auto">今日に合わせる</option>
+              <option value="spring">春</option>
+              <option value="earlySummer">初夏</option>
+              <option value="summer">夏</option>
+              <option value="autumn">秋</option>
+              <option value="winter">冬</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>投稿したいもの</span>
+            <select id="topic" name="topic">
+              <option value="seasonal">季節のおすすめ</option>
+              <option value="wildVegetables">山菜</option>
+              <option value="greenPepper">ピーマン</option>
+              <option value="tomato">トマト</option>
+              <option value="watermelon">スイカ</option>
+              <option value="eggplant">なす</option>
+              <option value="strawberry">いちご</option>
+              <option value="jam">ジャム</option>
+              <option value="compost">馬糞堆肥の畑</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>雰囲気</span>
+            <select id="mood" name="mood">
+              <option value="gentle">やさしく、おおらか</option>
+              <option value="fresh">みずみずしく元気</option>
+              <option value="story">畑の物語っぽく</option>
+              <option value="sales">販売のお知らせ寄り</option>
+            </select>
+          </label>
+
+          <label class="field field--wide">
+            <span>足したい一言</span>
+            <input
+              id="memo"
+              name="memo"
+              type="text"
+              placeholder="例：本日少しだけ直売に出します"
+              autocomplete="off"
+            />
+          </label>
+
+          <div class="button-row">
+            <button class="primary-button" type="submit">記事を作る</button>
+            <button class="quiet-button" id="shuffleButton" type="button">
+              別案
+            </button>
+          </div>
+        </form>
+
+        <section class="result-panel" aria-labelledby="result-title">
+          <div class="result-header">
+            <div>
+              <p class="eyebrow">完成文</p>
+              <h2 id="result-title">Instagram本文</h2>
+            </div>
+            <button class="copy-button" id="copyButton" type="button">
+              コピー
+            </button>
+          </div>
+
+          <textarea id="result" spellcheck="false"></textarea>
+          <p class="hint" id="copyMessage" aria-live="polite">
+            気になるところを少し直して、そのまま投稿に使えます。
+          </p>
+        </section>
       </section>
     </main>
 
